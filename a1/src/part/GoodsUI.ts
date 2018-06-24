@@ -15,13 +15,14 @@ class GoodsUI extends eui.Component {
 
         /// 填充数据
         var dsListHeros:Array<Object> = [
-            { icon: "goods01_png", goodsName: "魔法石", comment: "法力加成 +3" }
-            , { icon: "goods02_png", goodsName: "诅咒娃娃", comment: "咒术加成 +3" }
-            , { icon: "goods03_png", goodsName: "万圣戒指", comment: "敏捷加成 +3" }
-            , { icon: "goods04_png", goodsName: "斗篷", comment: "耐力加成 +3" }
-            , { icon: "goods05_png", goodsName: "鹅毛笔", comment: "精神加成 +3" }
-            , { icon: "goods06_png", goodsName: "血滴子", comment: "嗜血加成 +3" }
-            , { icon: "goods07_png", goodsName: "屠龙刀", comment: "力量加成 +5" }
+            { icon: "goods01_png", goodsName: "初始获得", comment: "容易获得奖励", goodsType:"步行" }
+            , { icon: "goods02_png", goodsName: "明信片*15", comment: "步数减少1/5", goodsType:"自行车" }
+            , { icon: "goods03_png", goodsName: "明信片*40", comment: "步数减少1/5", goodsType:"小汽车" }
+            , { icon: "goods04_png", goodsName: "明信片*40", comment: "步数减少1/5", goodsType:"动车" }
+            , { icon: "goods05_png", goodsName: "明信片*40", comment: "步数减少1/5", goodsType:"飞机" }
+            , { icon: "goods06_png", goodsName: "明信片*40", comment: "步数减少1/5", goodsType:"火箭" }
+            , { icon: "goods06_png", goodsName: "明信片*40", comment: "步数减少1/5", goodsType:"火箭" }
+            , { icon: "goods07_png", goodsName: "明信片*40", comment: "力量加成 +5", goodsType:"筋斗云" }
         ];
         this.listGoods.dataProvider = new eui.ArrayCollection( dsListHeros );
 

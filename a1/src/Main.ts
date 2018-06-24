@@ -161,84 +161,84 @@ class Main extends eui.UILayer {
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
 
-        //add test code 20180617
-         var _myGrid:MyGrid = new MyGrid();
-        this.addChild( _myGrid );
+        // //add test code 20180617
+        //  var _myGrid:MyGrid = new MyGrid();
+        // this.addChild( _myGrid );
 
-        //设定2个偏移量
-        var offsetX: number;
-        var offsetY: number;
-        //画一个红色的圆
-        var circle: egret.Shape = new egret.Shape();
-        circle.graphics.beginFill(0xff0000);
-        circle.graphics.drawCircle(25, 25, 25);
-        circle.graphics.endFill();
-        this.addChild(circle);
-        //手指按到屏幕，触发 startMove 方法
-        circle.touchEnabled = true;
-        circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, this);
-        //手指离开屏幕，触发 stopMove 方法
-        circle.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, this);
-        function startMove(e: egret.TouchEvent): void {
-            //计算手指和圆形的距离
-            offsetX = e.stageX - circle.x;
-            offsetY = e.stageY - circle.y;
-            //手指在屏幕上移动，会触发 onMove 方法
-            this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
-            icon.scaleX = 2;
-            icon.scaleY = 2;
-        }
-        function stopMove(e: egret.TouchEvent) {
-            console.log(22);
-            //手指离开屏幕，移除手指移动的监听
-            this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
+        // //设定2个偏移量
+        // var offsetX: number;
+        // var offsetY: number;
+        // //画一个红色的圆
+        // var circle: egret.Shape = new egret.Shape();
+        // circle.graphics.beginFill(0xff0000);
+        // circle.graphics.drawCircle(25, 25, 25);
+        // circle.graphics.endFill();
+        // this.addChild(circle);
+        // //手指按到屏幕，触发 startMove 方法
+        // circle.touchEnabled = true;
+        // circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, this);
+        // //手指离开屏幕，触发 stopMove 方法
+        // circle.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, this);
+        // function startMove(e: egret.TouchEvent): void {
+        //     //计算手指和圆形的距离
+        //     offsetX = e.stageX - circle.x;
+        //     offsetY = e.stageY - circle.y;
+        //     //手指在屏幕上移动，会触发 onMove 方法
+        //     this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
+        //     icon.scaleX = 2;
+        //     icon.scaleY = 2;
+        // }
+        // function stopMove(e: egret.TouchEvent) {
+        //     console.log(22);
+        //     //手指离开屏幕，移除手指移动的监听
+        //     this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
 
-            icon.scaleX = 1;
-            icon.scaleY = 1;
-        }
-        function onMove(e: egret.TouchEvent): void {
-            //通过计算手指在屏幕上的位置，计算当前对象的坐标，达到跟随手指移动的效果
-            circle.x = e.stageX - offsetX;
-            circle.y = e.stageY - offsetY;
+        //     icon.scaleX = 1;
+        //     icon.scaleY = 1;
+        // }
+        // function onMove(e: egret.TouchEvent): void {
+        //     //通过计算手指在屏幕上的位置，计算当前对象的坐标，达到跟随手指移动的效果
+        //     circle.x = e.stageX - offsetX;
+        //     circle.y = e.stageY - offsetY;
 
-            sprcon.swapChildren( spr11, spr22 );
-        }
-
-
+        //     sprcon.swapChildren( spr11, spr22 );
+        // }
 
 
-        var sprcon: egret.Sprite = new egret.Sprite();
-        this.addChild(sprcon);
-        sprcon.x = 10;
-        var spr11: egret.Sprite = new egret.Sprite();
-        spr11.graphics.beginFill(0xff0000);
-        spr11.graphics.drawRect(0, 0, 100, 100);
-        spr11.graphics.endFill();
-        spr11.x = 150;
-        spr11.y = 150;
-        sprcon.addChild(spr11);
-        var spr22: egret.Sprite = new egret.Sprite();
-        spr22.graphics.beginFill(0x00ff00);
-        spr22.graphics.drawRect(0, 0, 100, 100);
-        spr22.graphics.endFill();
-        spr22.x = 200;
-        spr22.y = 150;
-        sprcon.addChild(spr22);
-        var _spr:egret.DisplayObject = sprcon.getChildAt( 1 );
-        _spr.alpha = 0.5;
 
 
-        var shp:egret.Shape = new egret.Shape();
-        shp.graphics.lineStyle( 2, 0x00ff00 );
-        shp.graphics.moveTo( 68, 84 );
-        shp.graphics.lineTo( 167, 76 );
-        shp.graphics.lineTo( 221, 118 );
-        shp.graphics.lineTo( 290, 162 );
-        shp.graphics.lineTo( 297, 228 );
-        shp.graphics.lineTo( 412, 250 );
-        shp.graphics.lineTo( 443, 174 );
-        shp.graphics.endFill();
-        this.addChild( shp );
+        // var sprcon: egret.Sprite = new egret.Sprite();
+        // this.addChild(sprcon);
+        // sprcon.x = 10;
+        // var spr11: egret.Sprite = new egret.Sprite();
+        // spr11.graphics.beginFill(0xff0000);
+        // spr11.graphics.drawRect(0, 0, 100, 100);
+        // spr11.graphics.endFill();
+        // spr11.x = 150;
+        // spr11.y = 150;
+        // sprcon.addChild(spr11);
+        // var spr22: egret.Sprite = new egret.Sprite();
+        // spr22.graphics.beginFill(0x00ff00);
+        // spr22.graphics.drawRect(0, 0, 100, 100);
+        // spr22.graphics.endFill();
+        // spr22.x = 200;
+        // spr22.y = 150;
+        // sprcon.addChild(spr22);
+        // var _spr:egret.DisplayObject = sprcon.getChildAt( 1 );
+        // _spr.alpha = 0.5;
+
+
+        // var shp:egret.Shape = new egret.Shape();
+        // shp.graphics.lineStyle( 2, 0x00ff00 );
+        // shp.graphics.moveTo( 68, 84 );
+        // shp.graphics.lineTo( 167, 76 );
+        // shp.graphics.lineTo( 221, 118 );
+        // shp.graphics.lineTo( 290, 162 );
+        // shp.graphics.lineTo( 297, 228 );
+        // shp.graphics.lineTo( 412, 250 );
+        // shp.graphics.lineTo( 443, 174 );
+        // shp.graphics.endFill();
+        // this.addChild( shp );
 
         //add by hyh
         /*
@@ -294,24 +294,21 @@ class Main extends eui.UILayer {
      */
     private onButtonClick(e: egret.TouchEvent) {
         let panel = new eui.Panel();
-        panel.title = "Title";
+        panel.title = "山西——云冈石窟";
         panel.horizontalCenter = 0;
         panel.verticalCenter = 0;
         panel.height = 600;
-        /*
-        var listGroup = new components.ListGroup();
-        listGroup.width = 300;
-        listGroup.height = 100;
-        listGroup.x = 100;//panel.width/2 - listGroup.width/2;
-        listGroup.y = 50;//0;50;
-        panel.addChild(listGroup);
-        */
+        panel.width = 500;
+       
 
         //add by hyh
         this._goodsUI = new GoodsUI();
-        this._goodsUI.horizontalCenter = 0;
+        // this._goodsUI.horizontalCenter = 0;
+        // this._goodsUI.x =panel.x + 10;
+        this._goodsUI.width = 300;
+        this._goodsUI.height = 100;
         panel.addChild( this._goodsUI );
-        console.log( "Main.ts this._homeUI:", this._goodsUI.width, this._goodsUI.height );
+        console.log( "Main.ts this._homeUI:", this._goodsUI.width, this._goodsUI.height, this._goodsUI.$x, this._goodsUI.$y);
 
         this.addChild(panel);
     }

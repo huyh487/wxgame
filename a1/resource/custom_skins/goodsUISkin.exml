@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="GoodsUISkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui">
-	<e:Scroller id="scrListGoods" height="517" width="450" x="14" y="184">
+	<e:Scroller id="scrListGoods" height="330" width="450" x="14" y="184">
 		<e:viewport>
 			<e:List id="listGoods" height="110">
 				<e:layout> 
