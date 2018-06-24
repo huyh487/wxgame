@@ -1,8 +1,12 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bgListPage_jpg,btnOK_png,checked_png,checkNo_png,goods012_png,goods022_png,goods032_png,goods042_png,goods052_png,goods062_png,goods072_png,goodsTitle_png,heros01_png,heros02_png,heros03_png,heros04_png,heros05_png,heros06_png,heros07_png,herosTitle_png,hScrollBar01_png,hScrollBar02_png,listItemBkgd_png",
 			"name": "preload"
+		},
+		{
+			"keys": "btnOK_png,checked_png,checkNo_png,goods01_png,goods02_png,goods03_png,goods04_png,goods05_png,goods06_png,goods07_png,goodsTitle_png,heros01_png,heros02_png,heros03_png,heros04_png,heros05_png,heros06_png,heros07_png,herosTitle_png,listItemBkgd_png,hScrollBar02_png,hScrollBar01_png,bgListPage_jpg",
+			"name": "heros_goods"
 		}
 	],
 	"resources": [
@@ -135,6 +139,156 @@
 			"name": "description_json",
 			"type": "json",
 			"url": "config/description.json"
+		},
+		{
+			"name": "goods01_png",
+			"type": "image",
+			"url": "art/heros_goods/goods01.png"
+		},
+		{
+			"name": "goods02_png",
+			"type": "image",
+			"url": "art/heros_goods/goods02.png"
+		},
+		{
+			"name": "goods03_png",
+			"type": "image",
+			"url": "art/heros_goods/goods03.png"
+		},
+		{
+			"name": "goods04_png",
+			"type": "image",
+			"url": "art/heros_goods/goods04.png"
+		},
+		{
+			"name": "goods05_png",
+			"type": "image",
+			"url": "art/heros_goods/goods05.png"
+		},
+		{
+			"name": "goods06_png",
+			"type": "image",
+			"url": "art/heros_goods/goods06.png"
+		},
+		{
+			"name": "goods07_png",
+			"type": "image",
+			"url": "art/heros_goods/goods07.png"
+		},
+		{
+			"name": "bgListPage_jpg",
+			"type": "image",
+			"url": "art/heros_goods/bgListPage.jpg"
+		},
+		{
+			"name": "btnOK_png",
+			"type": "image",
+			"url": "art/heros_goods/btnOK.png"
+		},
+		{
+			"name": "checked_png",
+			"type": "image",
+			"url": "art/heros_goods/checked.png"
+		},
+		{
+			"name": "checkNo_png",
+			"type": "image",
+			"url": "art/heros_goods/checkNo.png"
+		},
+		{
+			"name": "goods012_png",
+			"type": "image",
+			"url": "art/heros_goods/goods01.png"
+		},
+		{
+			"name": "goods022_png",
+			"type": "image",
+			"url": "art/heros_goods/goods02.png"
+		},
+		{
+			"name": "goods032_png",
+			"type": "image",
+			"url": "art/heros_goods/goods03.png"
+		},
+		{
+			"name": "goods042_png",
+			"type": "image",
+			"url": "art/heros_goods/goods04.png"
+		},
+		{
+			"name": "goods052_png",
+			"type": "image",
+			"url": "art/heros_goods/goods05.png"
+		},
+		{
+			"name": "goods062_png",
+			"type": "image",
+			"url": "art/heros_goods/goods06.png"
+		},
+		{
+			"name": "goods072_png",
+			"type": "image",
+			"url": "art/heros_goods/goods07.png"
+		},
+		{
+			"name": "goodsTitle_png",
+			"type": "image",
+			"url": "art/heros_goods/goodsTitle.png"
+		},
+		{
+			"name": "heros01_png",
+			"type": "image",
+			"url": "art/heros_goods/heros01.png"
+		},
+		{
+			"name": "heros02_png",
+			"type": "image",
+			"url": "art/heros_goods/heros02.png"
+		},
+		{
+			"name": "heros03_png",
+			"type": "image",
+			"url": "art/heros_goods/heros03.png"
+		},
+		{
+			"name": "heros04_png",
+			"type": "image",
+			"url": "art/heros_goods/heros04.png"
+		},
+		{
+			"name": "heros05_png",
+			"type": "image",
+			"url": "art/heros_goods/heros05.png"
+		},
+		{
+			"name": "heros06_png",
+			"type": "image",
+			"url": "art/heros_goods/heros06.png"
+		},
+		{
+			"name": "heros07_png",
+			"type": "image",
+			"url": "art/heros_goods/heros07.png"
+		},
+		{
+			"name": "herosTitle_png",
+			"type": "image",
+			"url": "art/heros_goods/herosTitle.png"
+		},
+		{
+			"name": "hScrollBar01_png",
+			"type": "image",
+			"url": "art/heros_goods/hScrollBar01.png"
+		},
+		{
+			"name": "hScrollBar02_png",
+			"type": "image",
+			"url": "art/heros_goods/hScrollBar02.png"
+		},
+		{
+			"name": "listItemBkgd_png",
+			"type": "image",
+			"url": "art/heros_goods/listItemBkgd.png"
 		}
 	]
 }

@@ -95,6 +95,10 @@ class Main extends eui.UILayer {
     }
 
     private textfield: egret.TextField;
+
+    //add by hyh 
+    private _goodsUI:GoodsUI;
+    
     /**
      * 创建场景界面
      * Create scene interface
@@ -235,6 +239,14 @@ class Main extends eui.UILayer {
         shp.graphics.lineTo( 443, 174 );
         shp.graphics.endFill();
         this.addChild( shp );
+
+        //add by hyh
+        /*
+        this._goodsUI = new GoodsUI();
+        this._goodsUI.horizontalCenter = 0;
+        this.addChild( this._goodsUI );
+        console.log( "Main.ts this._homeUI:", this._goodsUI.width, this._goodsUI.height );
+        */
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
@@ -285,13 +297,22 @@ class Main extends eui.UILayer {
         panel.title = "Title";
         panel.horizontalCenter = 0;
         panel.verticalCenter = 0;
-        panel.height = 300;
+        panel.height = 600;
+        /*
         var listGroup = new components.ListGroup();
         listGroup.width = 300;
         listGroup.height = 100;
         listGroup.x = 100;//panel.width/2 - listGroup.width/2;
         listGroup.y = 50;//0;50;
         panel.addChild(listGroup);
+        */
+
+        //add by hyh
+        this._goodsUI = new GoodsUI();
+        this._goodsUI.horizontalCenter = 0;
+        panel.addChild( this._goodsUI );
+        console.log( "Main.ts this._homeUI:", this._goodsUI.width, this._goodsUI.height );
+
         this.addChild(panel);
     }
 }
